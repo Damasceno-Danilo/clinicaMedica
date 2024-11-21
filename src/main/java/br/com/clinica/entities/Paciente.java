@@ -18,4 +18,14 @@ public class Paciente extends Pessoas{
     public void setHistoricoMedico(String historicoMedico) {
         this.historicoMedico = historicoMedico;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + // Chama o toString da classe base
+                ",\n Historico medico: " +
+                getHistoricoMedico() ;
+
+    }
+
+
 }

@@ -10,7 +10,7 @@ public abstract class ProfissionalSaude extends Pessoas {
     private String especializacao;
     private List<LocalDateTime> horarioDisponivel;
 
-    public ProfissionalSaude(String name, LocalDate dataNascimento, int numeroTelefone, int crm, String especializacao, List<LocalDateTime> horarioDisponivel) {
+    public ProfissionalSaude(String name, LocalDate dataNascimento, int numeroTelefone, int crm, String especializacao) {
         super(name, dataNascimento, numeroTelefone);
         this.crm = crm;
         this.especializacao = especializacao;

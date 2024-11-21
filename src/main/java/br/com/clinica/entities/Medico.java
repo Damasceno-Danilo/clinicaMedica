@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Medico extends ProfissionalSaude {
 
-    public Medico(String name, LocalDate dataNascimento, int numeroTelefone, int crm, String especializacao, List<LocalDateTime> horarioDisponivel) {
-        super(name, dataNascimento, numeroTelefone, crm, especializacao, horarioDisponivel);
+    public Medico(String name, LocalDate dataNascimento, Integer numeroTelefone, int crm, String especializacao) {
+        super(name, dataNascimento, numeroTelefone, crm, especializacao);
     }
 
     @Override

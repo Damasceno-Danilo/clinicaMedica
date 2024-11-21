@@ -49,7 +49,12 @@ public class Pessoas {
         this.numeroTelefone = numeroTelefone;
     }
 
-    public String getCpf() {
-        return cpf;
+    @Override
+    public String toString() {
+        return "Dados Paciente " +
+                "\n name: " + name  +
+                ",\n dataNascimento: " + dataNascimento +
+                ",\n numeroTelefone: " + numeroTelefone +
+                ",\n cpf: " + cpf ;
     }
 }

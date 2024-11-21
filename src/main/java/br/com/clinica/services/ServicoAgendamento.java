@@ -14,7 +14,7 @@ public class ServicoAgendamento {
     private List<Consulta> consulta;
     private List<Medico> medicos;
 
-    public ServicoAgendamento(List<Consulta> consulta, List<Medico> medicos) {
+    public ServicoAgendamento(List<Medico> medicos) {
         this.consulta = consulta;
         this.medicos = medicos;
     }
@@ -55,13 +55,13 @@ public class ServicoAgendamento {
         consulta.consultaAgendada();
     }
 
-    public void listarProfissionaisDisponivel(Consulta consulta, LocalDateTime localDateTime) {
+    public void listarProfissionaisDisponivel() {
         if (medicos.isEmpty()) {
             System.out.println("Nenhum profissional disponivel: ");
         }
         System.out.println("Medico disponivel ");
         for (Medico medico : medicos) {
-            System.out.println(consulta.consultaAgendada());
+            System.out.println("Consulta agendada");
         }
     }
 
