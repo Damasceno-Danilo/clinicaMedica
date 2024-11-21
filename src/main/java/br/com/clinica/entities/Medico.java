@@ -4,12 +4,11 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public class Medico extends ProffisionalSaude {
+public class Medico extends ProfissionalSaude {
 
-    public Medico(String cpf, int numeroTelefone, LocalDate dataNascimento, String name, int crm, String especializacao, List<LocalDateTime> horarioDisponivel, String espcialidade) {
-        super(cpf, numeroTelefone, dataNascimento, name, crm, especializacao, horarioDisponivel);
+    public Medico(String name, LocalDate dataNascimento, int numeroTelefone, int crm, String especializacao, List<LocalDateTime> horarioDisponivel) {
+        super(name, dataNascimento, numeroTelefone, crm, especializacao, horarioDisponivel);
     }
-
 
     @Override
     public void agendarConsulta(Paciente paciente, LocalDateTime horario) {

@@ -12,6 +12,12 @@ public class Pessoas {
     public Pessoas() {
     }
 
+    public Pessoas(String name, LocalDate dataNascimento, int numeroTelefone) {
+        this.name = name;
+        this.dataNascimento = dataNascimento;
+        this.numeroTelefone = numeroTelefone;
+    }
+
     public Pessoas(String cpf, int numeroTelefone, LocalDate dataNascimento, String name) {
         this.cpf = cpf;
         this.numeroTelefone = numeroTelefone;

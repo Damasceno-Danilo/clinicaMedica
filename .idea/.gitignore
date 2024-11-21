@@ -1,0 +1,30 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Ignore diretórios de build e cache
+/build/
+/.gradle/
+
+# Logs
+*.log
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos IDE específicos
+*.iml
+.idea/
+.vscode/
+
+# Dependências do Gradle baixadas localmente
+.gradle/
+
+# Arquivos de execução de testes ou temporários
+*.class
+*.war
+*.jar
+
+# Arquivos de ambiente local
+*.env
+

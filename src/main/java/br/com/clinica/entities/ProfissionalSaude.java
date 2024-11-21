@@ -4,14 +4,14 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public abstract class ProffisionalSaude extends Pessoas {
+public abstract class ProfissionalSaude extends Pessoas {
 
     private int crm;
     private String especializacao;
     private List<LocalDateTime> horarioDisponivel;
 
-    public ProffisionalSaude(String cpf, int numeroTelefone, LocalDate dataNascimento, String name, int crm, String especializacao, List<LocalDateTime> horarioDisponivel) {
-        super(cpf, numeroTelefone, dataNascimento, name);
+    public ProfissionalSaude(String name, LocalDate dataNascimento, int numeroTelefone, int crm, String especializacao, List<LocalDateTime> horarioDisponivel) {
+        super(name, dataNascimento, numeroTelefone);
         this.crm = crm;
         this.especializacao = especializacao;
         this.horarioDisponivel = horarioDisponivel;
