@@ -5,12 +5,16 @@ import java.time.LocalDateTime;
 public class Consultation {
 
     private Pacient pacient;
-    private HealthProfessional proffisionalSaude;
+    private professionalHealth proffisionalSaude;
     private LocalDateTime dateTime;
 
-    public Consultation(Pacient pacient, HealthProfessional healthProfessional, LocalDateTime dateTime) {
+    public Consultation() {
+    }
+
+    public Consultation(Pacient pacient, professionalHealth professionalHealth, LocalDateTime dateTime) {
+
         this.pacient = pacient;
-        this.proffisionalSaude = healthProfessional;
+        this.proffisionalSaude = professionalHealth;
         this.dateTime = dateTime;
     }
 
@@ -18,16 +22,16 @@ public class Consultation {
         return pacient;
     }
 
-    public void setPaciente(Pacient pacient) {
+    public void setPatient(Pacient pacient) {
         this.pacient = pacient;
     }
 
-    public HealthProfessional getHelthProfessional() {
+    public professionalHealth getHelthProfessional() {
         return proffisionalSaude;
     }
 
-    public void setProffisionalSaude(HealthProfessional healthProfessional) {
-        this.proffisionalSaude = healthProfessional;
+    public void setProffisionalSaude(professionalHealth professionalHealth) {
+        this.proffisionalSaude = professionalHealth;
     }
 
     public LocalDateTime getDateTime() {
@@ -38,12 +42,14 @@ public class Consultation {
         this.dateTime = dateTime;
     }
 
-    public String appointmentScheduled() {
+
+
+    public String toString() {
         return "Nome do Paciente: "
                 + pacient.getName()
-                + "com o medico: "
+                + " com o Dr(a): "
                 + proffisionalSaude.getName()
-                + "Horario: "
+                + " Horario: "
                 + dateTime;
     }
 }
