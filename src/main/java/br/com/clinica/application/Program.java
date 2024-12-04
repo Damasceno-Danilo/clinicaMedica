@@ -64,7 +64,7 @@ public class Program {
                     } else {
                         System.out.println("Paciente não encontrado");
                     }
-//Selecionar um médico
+
                     System.out.println("Digite o nome do Médico ");
                     nameDoctor = sc.nextLine();
 
@@ -84,7 +84,7 @@ public class Program {
                     System.out.println("Selecionar a data da consulta (Ex: 2024-12-01T15:30): ");
                     String dataTimeInput = sc.nextLine();
                     dateTime = LocalDateTime.parse(dataTimeInput);
-//Criar a consulta e exibir confirmação
+
 
                     Consultation consultation = new Consultation(patientFound, doctorFound, dateTime);
                     consultations.add(consultation);
@@ -97,7 +97,7 @@ public class Program {
                     System.out.println("Digite o nome do Paciente:");
                     namePacient = sc.nextLine();
 
-// Procurar consulta na lista de consultas agendadas
+
                     Consultation consultationFound = null;
                     for (Consultation consultation1 : consultations) {
                         if (consultation1.getPatient().getName().equalsIgnoreCase(namePacient)) {
@@ -105,7 +105,7 @@ public class Program {
                             break;
                         }
                     }
-// Exibir consulta se encontrada
+
                     if (consultationFound != null) {
                         System.out.println("Consulta encontrada:");
                         System.out.println(consultationFound);
